@@ -1,15 +1,13 @@
-name: Mayur Patil
+name: Demo Workflow
 
-on: 
+on:
   push:
     branches: [ main ]
 
-
 jobs:
   demo:
-  runs-on: ubantu-latest
+    runs-on: ubuntu-latest
 
-  steps:
-   -name: Greetings
-   run: echo"Hello Form Pune"
-   
+    steps:
+      - name: Greetings
+        run: echo "Hello From Pune"
